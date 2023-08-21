@@ -1,7 +1,7 @@
 default: docs
 
 docs:
-	$(MAKE) -C spec
+	$(MAKE) -C sum
 
 clean:
-	$(MAKE) -C spec clean
+	$(MAKE) -C sum clean
