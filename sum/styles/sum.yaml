@@ -78,4 +78,3 @@ styles:
       page document name', fontName: fontSerifBold, fontSize: 200%, parent: bodytext}
   title-notice: {alignment: TA_JUSTIFY, comment: 'bold, justified text for title page
       notice', fontName: fontSerifBold, parent: bodytext}
-

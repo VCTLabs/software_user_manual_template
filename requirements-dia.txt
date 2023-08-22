@@ -1,3 +1,6 @@
+black
+graphviz
+jinja2
 # external requirements
 #  round
 #  graphviz
@@ -5,6 +8,3 @@
 #  imagemagick/graphicsmagick
 #  ttf-opensans fontconfig xdg-utils
 poetry
-black
-graphviz
-jinja2

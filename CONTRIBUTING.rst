@@ -106,4 +106,3 @@ This Code of Conduct is adapted from the `Contributor Covenant homepage`_,
 
 .. _Contributor Covenant homepage: http://contributor-covenant.org
 .. _version 1.4: http://contributor-covenant.org/version/1/4/
-
