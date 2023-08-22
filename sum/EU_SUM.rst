@@ -83,6 +83,10 @@ Document revision history.
      - SLA
      - 2023-08-21
      - Initial draft shell
+   * - 0.2
+     - SLA
+     - 2023-08-22
+     - Add system diagram
 
 
 .. raw:: pdf
@@ -98,11 +102,26 @@ Document revision history.
 1.1 - Identification
 ~~~~~~~~~~~~~~~~~~~~
 
+This document is the Draft Software User Manual (see revision table) for the
+End-user Management Component of the Advanced ACME Webb Services Appliance,
+Engineering Evaluation Unit.
 
 
 1.2 - System Overview
 ~~~~~~~~~~~~~~~~~~~~~
 
+The Advanced ACME Webb Services Appliance is an on-premise virtual Web Services
+cluster with an advanced management interface.  This document provides both the
+User Manual and Troubleshooting Guide for the Management Console only.  The ACME
+Web Service high-level system components are shown in Figure 1 below:
+
+.. figure:: images/advanced_acme_web_service.png
+   :scale: 120 %
+   :align: left
+
+   Figure 1. Advanced ACME Web Service Components
+
+The management console consumes monitoring data and creates analytics via Spark.
 
 
 1.3 - Document Overview
