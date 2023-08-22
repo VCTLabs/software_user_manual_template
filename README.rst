@@ -34,8 +34,10 @@ Contents after a fresh clone::
 
   ./
   ├── CONTRIBUTING.rst
+  ├── LICENSE
   ├── Makefile
   ├── README.rst
+  ├── pyproject.toml
   ├── requirements-dia.txt
   ├── resources  # these are references or pre-inputs to the build workflow
   │   ├── SUM_DID_DI-IPSC-81443.txt     # Software User Manual DID
@@ -67,6 +69,7 @@ Install the following with your system package manager to run the workflows:
 * Python_ - at least version 3.6
 * Tox_ - at least version 4.2
 * Graphviz_ - any recent version should work
+* make and bash - any recent versions should be fine
 
 .. _Python: https://docs.python.org/3.9/index.html
 .. _Tox: https://tox.wiki/en/latest/user_guide.html
@@ -75,6 +78,27 @@ Install the following with your system package manager to run the workflows:
 Now you can use the workflow commands to install the remaining dependencies
 using Python virtual environments inside the project directory and use the
 tools for "building" diagrams and document sources.
+
+Additional dependencies
+-----------------------
+
+The ``graph`` command shown above is *completely optional* and is therefore not
+required to generate/build graphics or documents. This ancillary command is only
+used to rebuild/add new resource content used by the ``diagrams`` package.  The
+required dependencies include Graphviz, along with the following:
+
+* round
+* inkscape
+* imagemagick/graphicsmagick
+* ttf-open-sans
+* fontconfig
+* xdg-utils
+
+Note that package names for the above can differ between package managers, so
+search accordingly (remember you only need Graphviz for the document workflows).
+
+Usage
+=====
 
 From inside the repository checkout, use  ``tox list`` to view the list of
 environment descriptions::
@@ -88,12 +112,30 @@ environment descriptions::
   gen            -> Generate a new diagram from your python source file
 
 
+To build the SUM document, run the following 3 workflow commands in the order
+shown::
+
+  $ tox -e sync   # install repolite and clone the diagram repos to ext/ folder
+  $ tox -e gen    # install diagrams and generate the architecture diagram from python source,
+                  # then move the output .png file to sum/images/ folder
+  $ tox -e build  # install rst2pdf and build the PDF document from .rst source and .svg/.png images
+
+Points to note:
+
+* you only need to ``sync`` once (after a fresh checkout)
+* you only to run ``gen`` if the python source file is changed
+* run the ``build`` command any time to view a fresh PDF
+
+In addition to the ``gen`` command, the default makefiles will also build diagrams
+from ``.dot`` code if you drop a (graphviz) dot file in the ``sum/images/`` folder
+and use the resulting ``.svg`` file in your ``.rst`` source document.
+
 
 Contributing
 ============
 
-Please read CONTRIBUTING_ for details on the code of conduct and the
-process for submitting pull requests.
+Please read CONTRIBUTING_ for details on the code of conduct and some general
+guidance on submitting pull requests.
 
 .. _CONTRIBUTING: https://github.com/VCTLabs/software_user_manual_template/blob/master/CONTRIBUTING.rst
 
