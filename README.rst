@@ -38,21 +38,20 @@ Contents after a fresh clone::
   ├── README.rst
   ├── requirements-dia.txt
   ├── resources  # these are references or pre-inputs to the build workflow
-  │   ├── SUM_DID_DI-IPSC-81443.txt
-  │   ├── example-title-page.rst  # example title page source
-  │   └── acme_webservice.py   # source code for the example system diagram
+  │   ├── SUM_DID_DI-IPSC-81443.txt     # Software User Manual DID
+  │   ├── example-title-page.rst        # example title page source
+  │   └── acme_webservice.py            # source code for the example system diagram
   ├── sum
-  │   ├── EU_SUM.rst           # source code for the document/template
+  │   ├── EU_SUM.rst                    # source code for the document/template
   │   ├── Makefile
-  │   ├── images               # graphics sources for document build
+  │   ├── images                        # graphics sources for document build
   │   │   ├── ACME_Logo.png
   │   │   └── ACME_Logo.svg
-  │   └── styles               # old/new format style sheets
+  │   └── styles                        # old/new format style sheets
   │       ├── rst2pdf.style
   │       └── sum.yaml
-  ├── tox.ini                  # workflow configuration
-  └── toxfile.py               # workflow plugin file
-
+  ├── tox.ini                           # workflow configuration
+  └── toxfile.py                        # workflow plugin file
 
 
 .. _reStructuredText: https://docutils.sourceforge.io/rst.html
