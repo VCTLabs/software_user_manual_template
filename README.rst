@@ -79,10 +79,10 @@ Now you can use the workflow commands to install the remaining dependencies
 using Python virtual environments inside the project directory and use the
 tools for "building" diagrams and document sources.
 
-Additional dependencies
------------------------
+Optional dependencies
+---------------------
 
-The ``graph`` command shown above is *completely optional* and is therefore not
+The ``graph`` command shown below is *completely optional* and is therefore not
 required to generate/build graphics or documents. This ancillary command is only
 used to rebuild/add new resource content used by the ``diagrams`` package.  The
 required dependencies include Graphviz, along with the following:
