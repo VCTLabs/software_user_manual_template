@@ -106,8 +106,8 @@ environment descriptions::
   $ tox list
   ...
   additional environments:
-  sync           -> Install repolite and use it for cloning/installing diagram workflow deps
-  do             -> Run cmd following "--" from the graph env, e.g. "tox -e do -- repolite --show"
+  sync           -> Install repolite and use it for cloning diagram workflow deps
+  do             -> Run cmd following "--" from the sync env, e.g. "tox -e do -- repolite --show"
   graph          -> Build new content for the diagrams package (run sync first to install the source)
   gen            -> Generate a new diagram from your python source file
 
