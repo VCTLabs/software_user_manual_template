@@ -28,7 +28,7 @@
        Software User Manual
    * - .. class:: title-name
 
-       ACME Enginerring Evaluation Unit
+       ACME Engineering Evaluation Unit
 
 |
 |
