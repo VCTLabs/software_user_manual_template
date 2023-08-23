@@ -6,7 +6,7 @@
 
 |tag| |license| |python| |contributors|
 
-**Document as Code**
+**Documentation as Code**
 
 What is this thing?
 ===================
