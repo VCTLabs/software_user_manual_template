@@ -8,7 +8,7 @@
        |
        | |ACME_logo|
 
-.. |ACME_logo| image:: images/ACME_Logo.png
+.. |ACME_logo| image:: images/acme.png
    :width: 245
    :height: 84
    :scale: 250
