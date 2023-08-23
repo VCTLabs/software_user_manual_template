@@ -47,8 +47,8 @@ Contents after a fresh clone::
   │   ├── EU_SUM.rst                    # source code for the document/template
   │   ├── Makefile
   │   ├── images                        # graphics sources for document build
-  │   │   ├── ACME_Logo.png
-  │   │   └── ACME_Logo.svg
+  │   │   ├── acme.png
+  │   │   └── acme.svg
   │   └── styles                        # old/new format style sheets
   │       ├── rst2pdf.style
   │       └── sum.yaml
@@ -138,6 +138,57 @@ Please read CONTRIBUTING_ for details on the code of conduct and some general
 guidance on submitting pull requests.
 
 .. _CONTRIBUTING: https://github.com/VCTLabs/software_user_manual_template/blob/master/CONTRIBUTING.rst
+
+Pre-commit
+----------
+
+This repo is pre-commit_ enabled for python/rst source and file-type
+linting. The checks run automatically on commit and will fail the commit
+(if not clean) and perform simple file corrections.  For example, if the
+mypy check fails on commit, you must first fix any fatal errors for the
+commit to succeed. That said, pre-commit does nothing if you don't install
+it first (both the program itself and the hooks in your local repository
+copy).
+
+You will need to install pre-commit before contributing any changes;
+installing it using your system's package manager is recommended,
+otherwise install with pip into your local user environment using
+something like::
+
+  $ sudo emerge pre-commit  --or--
+  $ pip install pre-commit
+
+then install the hooks into the repo you just created from the template::
+
+  $ cd your_new_sum_repo/
+  $ pre-commit install
+
+It's usually a good idea to update the hooks to the latest version::
+
+    $ pre-commit autoupdate
+
+Most (but not all) of the pre-commit checks will make corrections for you,
+however, some will only report errors, so these you will need to correct
+manually.
+
+Automatic-fix checks include black, isort, autoflake, and miscellaneous
+file fixers. If any of these fail, you can review the changes with
+``git diff`` and just add them to your commit and continue.
+
+If any of the mypy or rst source checks fail, you will get a report, but
+then you must fix any errors before you can continue adding/committing.
+
+To see a "replay" of any ``rst`` check errors, run::
+
+  $ pre-commit run rst-backticks -a
+  $ pre-commit run rst-directive-colons -a
+  $ pre-commit run rst-inline-touching-normal -a
+
+To run all ``pre-commit`` checks manually, try::
+
+  $ pre-commit run -a
+
+.. _pre-commit: https://pre-commit.com/index.html
 
 
 License
