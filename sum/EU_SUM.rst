@@ -172,7 +172,7 @@ analytics from Spark.
 
 
 4.0 Access to the software
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 
 
 4.1 First-time user of the software
@@ -181,12 +181,12 @@ analytics from Spark.
 This paragraph shall be divided into the following subparagraphs.
 
 4.1.1 Equipment familiarization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 
 
 4.1.3 Installation and setup
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 
 
@@ -225,7 +225,7 @@ e.g., by function, by menu, by screen. Any necessary order in which
 procedures must be accomplished shall be described.
 
 5.3.x (Aspect of software use)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 
 5.4 Related processing
