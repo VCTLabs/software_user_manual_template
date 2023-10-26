@@ -14,7 +14,28 @@ from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
 from diagrams.onprem.queue import Kafka
 
-with Diagram(name="Advanced ACME Web Service", show=False):
+# can use graphviz dot attributes:
+# graph_attr, node_attr and edge_attr are supported
+
+node_attr = {
+    "fontsize": "14",
+}
+
+graph_attr = {
+    "fontsize": "24",
+    "labelloc": "t",
+    "bgcolor": "transparent",
+}
+
+edge_attr = {"penwidth": "5", "bgcolor": "transparent"}
+
+with Diagram(
+    "Advanced ACME Web Service",
+    show=False,
+    graph_attr=graph_attr,
+    edge_attr=edge_attr,
+    node_attr=node_attr,
+):
     ingress = Nginx("ingress")
 
     metrics = Prometheus("metric")

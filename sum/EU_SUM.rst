@@ -116,8 +116,7 @@ User Manual and Troubleshooting Guide for the Management Console only.  The ACME
 Web Service high-level system components are shown in Figure 1 below:
 
 .. figure:: images/advanced_acme_web_service.png
-   :scale: 120 %
-   :align: left
+   :width: 90%
 
    Figure 1. Advanced ACME Web Service Components
 

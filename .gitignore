@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 # generated/user files and directories
-advanced_acme_web_service.*
 ext/
 *.pdf
 
