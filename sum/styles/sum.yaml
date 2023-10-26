@@ -1,7 +1,40 @@
 # sum/styles/rst2pdf
 ---
 pageSetup: {margin-top: 1cm, size: Letter}
+
 styles:
+  heading1:
+    fontSize: 200%
+    parent: heading
+  heading2:
+    fontSize: 175%
+    parent: heading
+  heading3:
+    fontSize: 150%
+    parent: heading
+  heading4:
+    fontSize: 125%
+    parent: heading
+
+  item-list:
+    colWidths:
+    - 30pt
+    - null
+    commands:
+    - - VALIGN
+      - - 0
+        - 0
+      - - -1
+        - -1
+      - TOP
+    - - RIGHTPADDING
+      - - 0
+        - 0
+      - - 1
+        - -1
+      - 0
+    parent: bodytext
+
   normal: {allowOrphans: 6, allowWidows: 5}
   title-deepbox:
     commands:
