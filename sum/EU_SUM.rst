@@ -25,10 +25,10 @@
 
    * - .. class:: title-name
 
-       Software User Manual
+       Software User Manual for Advanced ACME Web Services Appliance
    * - .. class:: title-name
 
-       ACME Engineering Evaluation Unit
+       Engineering Evaluation Unit
 
 |
 |
@@ -36,7 +36,7 @@
 
 .. class:: title-info
 
-Doc #00001042
+Doc #ACME0081443A
 
 .. class:: title-info
 
