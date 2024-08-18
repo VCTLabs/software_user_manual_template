@@ -24,7 +24,7 @@ SOURCES_MK	:= $(SUMSRC) $(FIGS)
 GENFILES	:= $(FIGS)
 
 DOTFLAGS = -T$(FIGTYPE)
-RSTFLAGS = -s styles/sum.yaml
+RSTFLAGS = -s styles/sum.yaml,styles/draft.yaml --use-floating-images
 DOT_OFLAG = -o
 PDF_OFLAG = -o
 
