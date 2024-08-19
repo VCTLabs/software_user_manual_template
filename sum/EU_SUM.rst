@@ -196,7 +196,7 @@ b. Performance characteristics that can be expected by the user, such as:
   6) Error rate that can be expected
   7) Reliability that can be expected
 
-c. Relationship of the functions performed by the software with interfacing 
+c. Relationship of the functions performed by the software with interfacing
    systems, organizations, or positions
 d. Supervisory controls that can be implemented (such as passwords) to
    manage the software
@@ -394,4 +394,3 @@ applicable, each appendix shall be referenced in the main body of the
 document where the data would normally have been provided. Appendixes
 may be bound as separate documents for ease in handling. Appendixes
 shall be lettered alphabetically (A, B, etc.).
-
