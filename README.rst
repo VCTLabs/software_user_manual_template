@@ -12,8 +12,10 @@ What is this thing?
 ===================
 
 This is both a GitHub Template repository *and* a usable template for a
-DID-compliant Software User Manual in reStructuredText_. This repo contains
-the following items:
+MIL-STD-498_ DID-compliant Software User Manual in reStructuredText_.
+This repo contains the following items:
+
+.. _MIL-STD-498: https://github.com/VCTLabs/MIL-STD-498
 
 * A Data Item Descripttion for a Software User Manual (SUM) (in ASCII
   text format)
